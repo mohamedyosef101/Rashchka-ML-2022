@@ -1,0 +1,29 @@
+# The role is that there is no notebooks
+**.ipynb 
+
+# environment
+env/
+venv/
+ENV/
+.venv/
+bin/
+build/
+include/
+lib/
+scripts/
+pyvenv.cfg 
+*.env 
+.env.* 
+
+# VS code settings 
+.vscode/
+.vscode/* 
+
+# Model outputs (github can not handle large files)
+*.h5 
+*.ckpt 
+*.pth 
+*.model 
+
+# log files 
+*.log 
