@@ -15,9 +15,10 @@ pyvenv.cfg
 *.env 
 .env.* 
 
-# VS code settings 
+# settings & cache 
 .vscode/
 .vscode/* 
+**/__pycache__
 
 # Model outputs (github can not handle large files)
 *.h5 
