@@ -27,3 +27,7 @@ pyvenv.cfg
 
 # log files 
 *.log 
+
+# custom files 
+book-cover.png
+test.py 
