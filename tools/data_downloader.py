@@ -1,12 +1,9 @@
 import pandas as pd
 import os
-import requests
 
 def download_data(url, name):
-    response = requests.get(url)
-    response.raise_for_status()  # Check if the request was successful
 
-    data = pd.read_csv(pd.compat.StringIO(response.text))
+    data = pd.read_csv(url)
     
     data_dir = 'data'
     if not os.path.exists(data_dir):
