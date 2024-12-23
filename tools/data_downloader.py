@@ -5,7 +5,7 @@ def download_data(url, name):
 
     data = pd.read_csv(url)
     
-    data_dir = 'data'
+    data_dir = 'data/raw'
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
     
