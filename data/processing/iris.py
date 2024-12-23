@@ -17,5 +17,6 @@ iris = pd.read_csv('iris.csv', header=None, names=column_names)
 # Remove the "Iris-" prefix from the species names
 iris['species'] = iris['species'].str.replace('Iris-', '')
 
-# Print the DataFrame
-print(iris)
+# Save the processed data
+os.chdir('../')
+iris.to_csv('iris.csv', index=False)
