@@ -1,10 +1,6 @@
 import pandas as pd
 import numpy as np 
 
-# Load the iris dataset
-iris = pd.read_csv('data/iris.csv') 
-
-
 def split_iris(class1, class2, features):
     """
     Split the iris dataset and filter it for the selected classes and features.
@@ -28,6 +24,6 @@ def split_iris(class1, class2, features):
     y = np.where(iris_filtered['species'] == class1, 0, 1)
     
     # Extract the selected features
-    X = iris_filtered[features].values
+    X = iris_filtered.iloc[:, features].values
     
     return X, y

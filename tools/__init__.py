@@ -1,2 +1,2 @@
 from .data_downloader import download_data
-from .iris_split import split_iris
+from .split_iris import split_iris
